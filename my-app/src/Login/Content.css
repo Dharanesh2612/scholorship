@@ -1,0 +1,69 @@
+.content-container {
+    margin-left: 300px; 
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.live-scholarship-button,
+.always-open-button,free-training-button {
+    padding: 10px 20px; /* Increased padding for larger buttons */
+    min-width: 150px; /* Set a minimum width for the buttons */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.live-scholarship-button:hover,
+.always-open-button:hover,free-training-button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}
+
+.search-box {
+    display: flex; /* Use flexbox for layout */
+    width: auto; /* Allow it to shrink/grow based on content */
+}
+
+.search-box input {
+    max-width: 200px; /* Set a maximum width */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.search-box button {
+    padding: 10px 15px; /* Padding for button */
+    margin-left: 10px; /* Space between input and button */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.search-box button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}
+.free-training-button {
+    padding: 10px 20px; /* Match other buttons */
+    min-width: 150px; /* Set a minimum width */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.free-training-button:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}

@@ -1,0 +1,88 @@
+.side-dashboard {
+    width: 250px; /* Width of the sidebar */
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Right border for separation */
+    height: 80vh; /* Full height */
+    position: fixed; /* Fixed position */
+    top: 100px; /* Align to the top */
+    left: 0; /* Align to the left */
+    overflow-y: auto; /* Scroll if content overflows */
+    transition: transform 0.3s ease; /* Smooth transition for showing/hiding */
+}
+
+/* Hide sidebar on small screens */
+@media (max-width: 768px) {
+    .side-dashboard {
+        transform: translateX(-100%); /* Hide sidebar off-screen */
+        position: fixed; /* Still fixed */
+    }
+
+    .side-dashboard.active {
+        transform: translateX(0); /* Show sidebar when active */
+    }
+}
+
+.side-dashboard h2 {
+    font-size: 1.5em; /* Larger font size for header */
+    color: #333; /* Darker color for main heading */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.side-dashboard h3 {
+    font-size: 1.2em; /* Slightly smaller than h2 */
+    color: #555; /* Gray color for subheadings */
+    margin-top: 20px; /* Space above subheading */
+}
+
+.side-dashboard ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.side-dashboard li {
+    margin: 10px 0; /* Space between items */
+}
+
+.side-dashboard a {
+    text-decoration: none; /* Remove underline */
+    color: #007BFF; /* Primary link color */
+    padding: 10px; /* Padding around the link */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Make the entire area clickable */
+    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+.side-dashboard a:hover {
+    background-color: #007BFF; /* Highlight background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.notifications {
+    margin-top: 20px; /* Space before notifications */
+    background-color: #e9ecef; /* Light gray background */
+    padding: 15px; /* Padding inside the notifications area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.notifications h3 {
+    margin-top: 0; /* Remove top margin */
+    font-size: 1.2em; /* Subheading size */
+    color: #333; /* Darker color for notifications header */
+}
+
+.notifications p {
+    margin: 5px 0; /* Space above and below paragraph */
+    color: #555; /* Gray color for notification text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .side-dashboard h2, .side-dashboard h3 {
+        font-size: 1.2em; /* Smaller font size on small screens */
+    }
+
+    .side-dashboard a {
+        padding: 8px; /* Adjust padding for links */
+    }
+}

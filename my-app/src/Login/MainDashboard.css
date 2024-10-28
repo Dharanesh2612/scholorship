@@ -1,0 +1,21 @@
+.moving-paragraph {
+    color: red; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    width: 100%; 
+    position: relative; 
+    animation: moveLeft 30s linear infinite; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add slight shadow */
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(100%); 
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+  

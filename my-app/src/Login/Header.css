@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #bcbbb6;
+    color: white;
+}
+
+.logo img {
+    height: 40px; /* Adjust height as needed */
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+    color: rgb(20, 19, 16);
+    text-decoration: none;
+    font-size: 1em; /* Font size for links */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.free-user-button {
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #FFD700; /* Highlight color */
+    color: #16191c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Make it larger */
+    font-size: 1.1em; /* Slightly larger text */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #051310; /* Darker highlight on hover */
+}
+
+.free-user-button:hover {
+    background-color: #f1f1f1; /* Light background on hover */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .nav-links ul {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width for links */
+        padding: 10px 0; /* Add padding for links */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between links */
+        text-align: center; /* Center links */
+    }
+
+    .header-buttons {
+        width: 100%; /* Full width for buttons */
+        justify-content: space-between; /* Space out buttons */
+        margin-top: 10px; /* Add margin above buttons */
+    }
+}
